@@ -236,7 +236,7 @@ body {
 }
 
 .social-icons1 a:hover {
-    color: #0077b5; /* LinkedIn color as hover example */
+    color: red; /* LinkedIn color as hover example */
 }
 
 .features-container {
