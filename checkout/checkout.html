@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./cart.css">
+    <script src="../homepage/homepage.js" defer></script>
+    <link rel="stylesheet" href="./checkout.css">
+
+</head>
+
+   <!-- Top Banner -->
+   <div class="top-banner">
+    <div class="top-banner2">
+    <div class="top-banner-text">
+    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></p>
+    </div>
+    <div class="language">English <i class="fas fa-chevron-down"></i></div>
+</div>
+</div>
+<!-- header -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1><a style="color: black; text-decoration: none;" href="../homepage/homepage.html">Exclusive</a></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../homepage/homepage.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a style="text-decoration: underline;" href="../signup/signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- Dropdown cho Profile -->
+        <div class="profile-dropdown">
+            <button class="profile-dropdown-btn">
+                <i class="fas fa-user"></i> <!-- Icon tài khoản -->
+            </button>
+            <div class="profile-dropdown-list">
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-user"></i> Manage My Account
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-box"></i> My Orders
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-times-circle"></i> My Cancellations
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-star"></i> My Reviews
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="breadcrumb">
+        <a href="account.html">Account</a> / 
+        <a href="my-account.html">My Account</a> / 
+        <a href="product.html">Product</a> / 
+        <a href="cart.html">View Cart</a> / 
+        <span>CheckOut</span>
+    </div>
+    
+    <div class="logo-billing">
+        <h1>Billing Details</h1>
+    </div>
+   
+    <div class="form-container">
+    <div class="input-field">
+        <label for="input1">First Name<span>*</span></label>
+        <input type="text" id="input1" placeholder="Enter your first name">
+    </div>
+    <div class="input-field">
+        <label for="input2">Company Name<span></span></label>
+        <input type="text" id="input2" placeholder="Enter your Company Name">
+    </div>
+    <div class="input-field">
+        <label for="input3">Stress Address<span>*</span></label>
+        <input type="text" id="input3" placeholder="Enter your Stress Address">
+    </div>
+    <div class="input-field">
+        <label for="input4">Apartment, floor, etc. (optinal)<span></span></label>
+        <input type="text" id="input4" placeholder="Enter">
+    </div>
+    <div class="input-field">
+        <label for="input5">Town/City<span>*</span></label>
+        <input type="text" id="input5" placeholder="Enter your Town/City">
+    </div>
+    <div class="input-field">
+        <label for="input6">Phone Number<span>*</span></label>
+        <input type="number" id="input6" placeholder="Enter your phone number">
+    </div>
+    <div class="input-field">
+        <label for="input7">Email Address<span>*</span></label>
+        <input type="email" id="input6" placeholder="Enter your Email address">
+    </div>
+
+    <div class="save-info">
+        <input type="checkbox" id="save-info-checkbox">
+        <label for="save-info-checkbox">Save this information for faster check-out next time</label>
+    </div>
+</div>
+
+<div class="order-summary">
+    <!-- Hàng 1 -->
+    <div class="product-row">
+        <div class="product-image"><img src="../image/g27cq4-500x500 1.png" alt="Product Image 1"></div>
+        <div class="product-name">LCD Monitor</div>
+        <div class="product-price">$650</div>
+    </div>
+    
+    <!-- Hàng 2 -->
+    <div class="product-row">
+        <div class="product-image"><img src="../image/g92-2-500x500 1.png" alt="Product Image 2"></div>
+        <div class="product-name">H1 Gamepad</div>
+        <div class="product-price">$1100</div>
+    </div>
+
+    <!-- Hàng 3 -->
+    <div class="summary-row">
+        <div class="label">Subtotal</div>
+        <div class="price">$1750</div>
+    </div>
+
+    <!-- Hàng 4 -->
+    <div class="summary-row">
+        <div class="label">Shipping</div>
+        <div class="price">Free</div>
+    </div>
+
+    <!-- Hàng 5 -->
+    <hr>
+    <div class="summary-row">
+        <div class="label">Total</div>
+        <div class="price">$1750</div>
+    </div>
+
+    <!-- Hàng 6 -->
+    <div class="payment-option">
+        <input type="radio" name="payment" id="bank" checked>
+        <label for="bank">Bank</label>
+        <div class="payment-icons">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+        </div>
+    </div>
+
+    <!-- Hàng 7 -->
+    <div class="payment-option">
+        <input type="radio" name="payment" id="cod">
+        <label for="cod">Cash on Delivery</label>
+    </div>
+
+    <!-- Hàng 8 -->
+    <div class="coupon-section">
+        <input type="text" class="coupon-input" placeholder="Coupon Code">
+        <button class="apply-coupon">Apply Coupon</button>
+    </div>
+
+    <!-- Hàng 9 -->
+    <button class="place-order">Place Order</button>
+</div>
+
+</body>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-section-logo">
+            <h3>Exclusive</h3>
+            <p>Subscribe</p>
+            <p>Get 10% off your first order</p>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p><a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a></p>
+            <p><a href="tel:+8801588888999">+88015-88888-9999</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Login / Register</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Link</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section download-app">
+            <h3>Download App</h3>
+            <div class="app-links">
+                <img src="../image/Qrcode 1.png" alt="QR Code" class="qr-code">
+                <div class="app-buttons">
+                    <a href="#"><img src="../image/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png" alt="Google Play"></a>
+                    <a href="#"><img src="../image/download-appstore.png" alt="App Store"></a>
+                </div>
+            </div>
+            <article class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </article>
+        </div>
+        
+    </div>
+</footer>
+
+<div class="footer-bottom">
+    <p>© Copyright Rimel 2022. All rights reserved</p>
+</div>
+</html>

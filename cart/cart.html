@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./cart.css">
+    <script src="../homepage/homepage.js" defer></script>
+    <script src="cart.js"></script>
+</head>
+
+   <!-- Top Banner -->
+   <div class="top-banner">
+    <div class="top-banner2">
+    <div class="top-banner-text">
+    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></p>
+    </div>
+    <div class="language">English <i class="fas fa-chevron-down"></i></div>
+</div>
+</div>
+<!-- header -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1><a style="color: black; text-decoration: none;" href="../homepage/homepage.html">Exclusive</a></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../homepage/homepage.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a style="text-decoration: underline;" href="../signup/signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- Dropdown cho Profile -->
+        <div class="profile-dropdown">
+            <button class="profile-dropdown-btn">
+                <i class="fas fa-user"></i> <!-- Icon tài khoản -->
+            </button>
+            <div class="profile-dropdown-list">
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-user"></i> Manage My Account
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-box"></i> My Orders
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-times-circle"></i> My Cancellations
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-star"></i> My Reviews
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <div class="breadcrumb">
+        <a style="color: black;" href="../homepage/homepage.html">Home</a> / <span>Cart</span>
+    </div>
+
+    <div class="cart-container">
+        <!-- Column Headers -->
+        <div class="cart-header-row">
+            <div class="cart-header">Product</div>
+            <div class="cart-header">Price</div>
+            <div class="cart-header">Quantity</div>
+            <div class="cart-header">Subtotal</div>
+        </div>
+
+        <!-- Cart Items -->
+        <div class="cart-items">
+            <div class="cart-item-row">
+                <img src="../image/g27cq4-500x500 1.png" alt="LCD Monitor">
+                <div class="cart-item-title">LCD Monitor</div>
+                <div class="cart-item-price">$650</div>
+                <div class="cart-item-quantity">
+                    <select>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                    </select>
+                </div>
+                <div class="cart-item-subtotal">$650</div>
+            </div>
+
+            <div class="cart-item-row">
+                <img src="../image/g92-2-500x500 1.png" alt="H1 Gamepad">
+                <div class="cart-item-title">H1 Gamepad</div>
+                <div class="cart-item-price">$550</div>
+                <div class="cart-item-quantity">
+                    <select>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                    </select>
+                </div>
+                <div class="cart-item-subtotal">$1100</div>
+            </div>
+        </div>
+
+        <!-- Cart Buttons (Return to Shop and Update Cart in the same row) -->
+        <div class="cart-buttons">
+            <button type="button" onclick="window.location.href='shop.html'">Return to Shop</button>
+            <button type="button">Update Cart</button>
+        </div>
+
+        <!-- Coupon and Cart Total Section -->
+        <div class="coupon-cart-total-container">
+            <!-- Coupon Section -->
+            <div class="coupon-section">
+                <input type="text" class="coupon-code" placeholder="Coupon Code">
+                <button type="button" class="apply-coupon-btn">Apply Coupon</button>
+            </div>
+
+            <!-- Cart Total Section -->
+            <div class="cart-total-section">
+                <div class="cart-total-row">
+                    <span class="cart-total-label">Subtotal:</span>
+                    <span class="cart-total-value">$1750</span>
+                </div>
+                <div class="cart-total-row">
+                    <span class="cart-total-label">Shipping:</span>
+                    <span class="cart-total-value">Free</span>
+                </div>
+                <div class="cart-total-row">
+                    <span class="cart-total-label">Total:</span>
+                    <span class="cart-total-value">$1750</span>
+                </div>
+                <button type="button" class="proceed-to-checkout-btn"> <a href="../checkout/checkout.html">Proceed to Checkout</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-section-logo">
+            <h3>Exclusive</h3>
+            <p>Subscribe</p>
+            <p>Get 10% off your first order</p>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p><a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a></p>
+            <p><a href="tel:+8801588888999">+88015-88888-9999</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Login / Register</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Link</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section download-app">
+            <h3>Download App</h3>
+            <div class="app-links">
+                <img src="../image/Qrcode 1.png" alt="QR Code" class="qr-code">
+                <div class="app-buttons">
+                    <a href="#"><img src="../image/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png" alt="Google Play"></a>
+                    <a href="#"><img src="../image/download-appstore.png" alt="App Store"></a>
+                </div>
+            </div>
+            <article class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </article>
+        </div>
+        
+    </div>
+</footer>
+
+<div class="footer-bottom">
+    <p>© Copyright Rimel 2022. All rights reserved</p>
+</div>
+</html>

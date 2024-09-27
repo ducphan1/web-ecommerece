@@ -1,0 +1,139 @@
+.footer {
+    width: 100%;
+    height: 240px;
+    margin-top: 100px;
+}
+
+.welcome{
+    display: flex;
+    position: absolute;
+    width: 169px;
+    height: 21px;
+    left: 1166px;
+    top: 200px;
+    gap: 12px;
+}
+
+.navbar{
+    width: 1250px;
+}
+
+.welcome p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.welcome span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: red;
+}
+
+.container {
+    display: flex;
+    width: 1600px;
+    height: 800px;
+    gap: 20px; /* Giảm khoảng cách giữa sidebar và content */
+    margin-top: 200px;
+    gap: 500px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0; /* Điều chỉnh khoảng cách trên/dưới */
+    cursor: pointer;
+    color: black;
+}
+
+/* Dùng để phân tầng menu */
+.sidebar ul li.indented {
+    padding-left: 20px; /* Lùi vào phải một đoạn */
+}
+
+/* Định dạng cho các tiêu đề lớn */
+.sidebar p {
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px; /* Đảm bảo khoảng cách dòng hợp lý */
+    color: #000000;
+    margin: 0; /* Xóa margin mặc định */
+}
+
+/* Khi một mục được chọn */
+.sidebar ul li.active {
+    color: red;
+}
+
+  
+  .content {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+.button2 {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 214px;
+    height: 56px;
+    margin-left: 280px;
+  }
+
+.button1{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 214px;
+    height: 56px;
+    margin-top: -50px;
+}
