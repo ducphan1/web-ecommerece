@@ -1,0 +1,463 @@
+body {
+    height: auto;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    width: 103px;
+    height: 21px;
+    left: 185px;
+    top: 172px;;
+}
+
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+    opacity: 50%;
+}
+
+.breadcrumb span {
+    margin-left: 5px;
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 240px;
+    margin-top:210px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.contact-info {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.info-item .icon {
+    background-color: #f44336;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item .icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-form {
+    width: 55%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #d32f2f;
+}
+
+hr{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+
+/* Phone (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+    body{
+        height: 1000px;
+    }
+    .top-banner {
+        padding: 12px 20px;
+        width: 100%;
+    }
+    .top-banner2 {
+        gap: 10px;
+        margin-left: 20px;
+    }
+    .top-banner-text {
+        gap: 5px;
+    }
+  
+    .top-banner p{
+        font-size: 8px;
+    }
+  
+    .top-banner a{
+        font-size: 9px;
+    }
+  
+    .language{
+        font-size: 9px;
+        margin-top: 4px;
+    }
+    .navbar {
+        padding: 0 20px;
+        gap: 10px;
+        width: 80%;
+        align-items: center;
+    }
+  
+    .welcome{
+      margin-left: -920px;
+      margin-top: -28px;
+    }
+  
+    .container{
+      height: 50%;
+    }
+  
+    .logo{
+      width: 80px;
+      height: auto;
+      font-size: 12px;
+    }
+  
+    .menu{
+        display: none;
+    }
+    .search-bar {
+        display: none;
+    }
+    .icons {
+        margin-right: -60px;
+        gap: 1px;
+    }
+  
+    .profile-dropdown{
+      margin-right: -70px;
+      margin-top: 5px;
+    }
+    .main-content{
+        width: 100%;
+    }
+  
+    .breadcrumb{
+      margin-left: -170px;
+      width: auto;
+    }
+  
+    
+    .footer{
+        height: 800px;
+        margin-top: 100px;
+        width: 100%;
+    }
+  
+    .footer-content {
+        display: flex;
+        flex-direction: row; /* Giữ các phần tử theo chiều ngang */
+        flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu không đủ chỗ */
+        justify-content: space-between; /* Căn đều các phần tử */
+        align-items: flex-start; /* Căn các phần tử bắt đầu từ trên cùng */
+        margin-left: 50px;
+        gap: 10px; /* Giảm khoảng cách giữa các phần tử */
+    }
+  
+    .footer-section {
+        flex: 1 1 80px; /* Đặt chiều rộng tối thiểu là 100px */
+        padding: 5px; /* Giảm padding */
+        text-align: left; /* Căn trái nội dung */
+        box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+    }
+  
+    .footer-section h3 {
+        font-size: 14px; /* Giảm kích thước chữ */
+        margin-bottom: 5px; /* Giảm khoảng cách dưới */
+    }
+  
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 10px; /* Giảm kích thước chữ */
+        margin-bottom: 5px; /* Giảm khoảng cách dưới */
+    }
+  
+    .footer-section ul {
+        padding: 0; /* Loại bỏ padding */
+        list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    }
+  
+    .footer-section ul li {
+        margin-bottom: 2px; /* Giảm khoảng cách dưới */
+    }
+  
+    .subscribe-form {
+        margin-left: -20px;
+        display: flex;
+        flex-direction: row; /* Giữ các phần tử theo chiều ngang */
+        align-items: center; /* Căn giữa các phần tử */
+        gap: 5px; /* Giảm khoảng cách giữa các phần tử */
+    }
+  
+    .subscribe-form input {
+        width: calc(100% - 40px); /* Chiếm phần còn lại của chiều rộng trừ đi chiều rộng button */
+        margin-bottom: 0; /* Loại bỏ khoảng cách dưới */
+        padding: 5px; /* Giảm padding */
+        font-size: 10px; /* Giảm kích thước chữ */
+    }
+  
+    .subscribe-form button {
+        margin-left: -79px;
+        width: 40px; /* Đặt chiều rộng button */
+        padding: 5px; /* Giảm padding */
+        font-size: 10px; /* Giảm kích thước chữ */
+    }
+    
+    .download-app .app-links img{
+        left: 98px;
+        top: 440px;
+    }
+    .app-buttons{
+        right: 80px;
+    }
+
+    
+    .social-icons{display: none;}
+  
+    .footer-bottom {
+        font-size: 8px; /* Giảm kích thước chữ */
+        padding: 5px; /* Giảm padding */
+    }
+  
+    .footer-bottom{
+        width: 100%;
+    }
+  
+   
+  }
+  
+  /* Tablet (min-width: 768px and max-width: 992px) */
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+      height: 800px;
+      width: auto;
+    }
+    .top-banner {
+        padding: 12px 20px;
+        width: 100%;
+    }
+    .top-banner2 {
+        gap: 15px;
+        margin-left: 197.5px;
+    }
+    .top-banner-text {
+        gap: 5px;
+    }
+  
+    .top-banner p{
+        font-size: 8px;
+    }
+  
+    .top-banner a{
+        font-size: 9px;
+    }
+  
+    .language{
+        font-size: 9px;
+        margin-top: 4px;
+    }
+    .navbar {
+        padding: 0 20px;
+        gap: 10px;
+        width: 40%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: -100px;
+        
+    }
+  
+  
+    .container{
+      height: 50%;
+    }
+  
+    .logo{
+      width: 80px;
+      height: auto;
+      font-size: 12px;
+    }
+  
+    .menu{
+        display: none;
+    }
+    .search-bar {
+        display: none;
+    }
+    .icons {
+        margin-left: 390px;
+        gap: 1px;
+    }
+  
+    .profile-dropdown{
+      margin-left: -40px;
+      margin-top: 5px;
+    }
+    .main-content{
+        width: 100%;
+    }
+  
+    .breadcrumb{
+      margin-left: -170px;
+      width: auto;
+    }
+  
+    form input{
+      width: 100%;
+    }
+  
+    .button2{
+      margin-left: 200px;
+      width: 180px;
+    }
+  
+    .button1{
+      width: 180px;
+    }
+    
+    .footer{
+        margin-top: 300px;
+        width: 100%;
+        height: auto;
+    }
+  
+    .footer-content {
+        display: flex;
+        flex-direction: row; /* Giữ các phần tử theo chiều ngang */
+        flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu không đủ chỗ */
+        justify-content: space-between; /* Căn đều các phần tử */
+        align-items: flex-start; /* Căn các phần tử bắt đầu từ trên cùng */
+        margin-left: 10px;
+        gap: 5px; /* Giảm khoảng cách giữa các phần tử */
+    }
+  
+    .footer-section {
+        flex: 1 1 80px; /* Đặt chiều rộng tối thiểu là 100px */
+        padding: 5px; /* Giảm padding */
+        text-align: left; /* Căn trái nội dung */
+        box-sizing: border-box; /* Bao gồm padding trong chiều rộng */
+    }
+  
+    .footer-section h3 {
+        font-size: 14px; /* Giảm kích thước chữ */
+        margin-bottom: 5px; /* Giảm khoảng cách dưới */
+    }
+  
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 10px; /* Giảm kích thước chữ */
+        margin-bottom: 5px; /* Giảm khoảng cách dưới */
+    }
+  
+    .footer-section ul {
+        padding: 0; /* Loại bỏ padding */
+        list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    }
+  
+    .footer-section ul li {
+        margin-bottom: 2px; /* Giảm khoảng cách dưới */
+    }
+  
+    .subscribe-form {
+        margin-left: -20px;
+        display: flex;
+        flex-direction: row; /* Giữ các phần tử theo chiều ngang */
+        align-items: center; /* Căn giữa các phần tử */
+        gap: 5px; /* Giảm khoảng cách giữa các phần tử */
+    }
+  
+    .subscribe-form input {
+        width: calc(100% - 40px); /* Chiếm phần còn lại của chiều rộng trừ đi chiều rộng button */
+        margin-bottom: 0; /* Loại bỏ khoảng cách dưới */
+        padding: 5px; /* Giảm padding */
+        font-size: 10px; /* Giảm kích thước chữ */
+    }
+  
+    .subscribe-form button {
+        margin-left: -79px;
+        width: 40px; /* Đặt chiều rộng button */
+        padding: 5px; /* Giảm padding */
+        font-size: 10px; /* Giảm kích thước chữ */
+    }
+  
+    .download-app .app-links img{
+        left: 258px;
+        top: 200px;
+    }
+    .app-buttons{
+        right: 280px;
+        margin-bottom: 50px;
+    }
+    
+    .social-icons{display: none;}
+  
+    .footer-bottom {
+        font-size: 8px; /* Giảm kích thước chữ */
+        padding: 5px; /* Giảm padding */
+    }
+  
+    .footer-bottom{
+        width: 100%;
+    }
+  
+   
+  }
+  
+  
+  

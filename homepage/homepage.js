@@ -78,20 +78,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let x = setInterval(function() {
         let now = new Date().getTime();
         let distance = countDownDate - now;
-
-        // Calculate days, hours, minutes, and seconds
         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result
         document.getElementById("day1s").innerHTML = days < 10 ? "0" + days : days;
         document.getElementById("hour1s").innerHTML = hours < 10 ? "0" + hours : hours;
         document.getElementById("minute1s").innerHTML = minutes < 10 ? "0" + minutes : minutes;
         document.getElementById("second1s").innerHTML = seconds < 10 ? "0" + seconds : seconds;
-
-        // If the countdown is finished
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("day1s").innerHTML = "00";
@@ -107,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const slides = document.querySelector('.our-product .product-grid');
     const slideCount = slides ? slides.children.length : 0;
-    const visibleSlides = 4; // Number of slides visible at once
+    const visibleSlides = 4; 
     const prevButton = document.querySelector('.Our-product-content .prev-slide');
     const nextButton = document.querySelector('.Our-product-content .next-slide');
 
@@ -145,13 +139,37 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSlidePosition();
 });
 
-
+// Hàm toggle để bật/tắt dropdown
 function toggleDropdown() {
     const dropdown = document.querySelector('.profile-dropdown-list');
-    dropdown.classList.toggle('active');
+    dropdown.classList.toggle('active');  // Thêm hoặc bỏ class 'active'
 }
 
-document.querySelector('.profile-dropdown-btn').addEventListener('click', toggleDropdown);
+// Đảm bảo DOM được tải đầy đủ trước khi thực hiện script
+document.addEventListener('DOMContentLoaded', function() {
+    // Lấy phần tử button dropdown
+    const dropdownBtn = document.querySelector('.profile-dropdown-btn');
+    const dropdown = document.querySelector('.profile-dropdown-list');
+
+    // Kiểm tra nếu các phần tử tồn tại
+    if (dropdownBtn && dropdown) {
+        // Gắn sự kiện click cho nút dropdown
+        dropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Ngăn sự kiện click lan ra ngoài
+            toggleDropdown();  // Bật hoặc tắt dropdown
+        });
+
+        // Sự kiện click trên document để đóng dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target) && !dropdownBtn.contains(e.target)) {
+                dropdown.classList.remove('active');  // Đóng dropdown nếu click bên ngoài
+            }
+        });
+    }
+});
+
+
+
 
 //slidebar
 
@@ -161,14 +179,26 @@ const textContents = document.querySelectorAll('.text-content');
 
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-        // Xóa active class
+        
         dots.forEach(d => d.classList.remove('active'));
         slides.forEach(s => s.classList.remove('active'));
         textContents.forEach(tc => tc.classList.remove('active'));
 
-        // Thêm active class cho slide và dot hiện tại
         dot.classList.add('active');
         slides[index].classList.add('active');
         textContents[index].classList.add('active');
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    if (loggedInUser) {
+        // Hiển thị lời chào hoặc bất kỳ nội dung nào liên quan đến người dùng đã đăng nhập
+        document.querySelector('.welcome-message').textContent = `Welcome back, ${loggedInUser.name}`;
+        
+        // Thay đổi nút "Sign Up" hoặc "Login" thành nút "Account"
+        document.querySelector('.menu ul li a[href="../signup/signup.html"]').textContent = "Account";
+        document.querySelector('.menu ul li a[href="../signup/signup.html"]').href = "../account/account.html";
+    }
 });

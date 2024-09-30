@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NotFound</title>
     <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" href="../about/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="signup.css">
-    <script src="signup.js"></script>
+    <link rel="stylesheet" href="./notfound.css">
+    <script src="../homepage/homepage.js"></script>
 </head>
+
 
 <div class="top-banner">
     <div class="top-banner2">
@@ -28,10 +30,10 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a style="color: black; text-decoration: none;" href="../homepage/homepage.html">Home</a></li>
+                <li><a href="../homepage/homepage.html">Home</a></li>
                 <li><a href="../contact/contact.html">Contact</a></li>
                 <li><a href="../about/about.html">About</a></li>
-                <li><a style="text-decoration: underline; color: black;" href="../signup/signup.html">Sign Up</a></li>
+                <li><a style="text-decoration: underline;" href="../signup/signup.html">Sign Up</a></li>
             </ul>
         </div>
         <div class="search-bar">
@@ -42,62 +44,58 @@
             <a href="../wishlist/wishlist.html"><i class="fas fa-heart"></i></a>
             <a href="../cart/cart.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
+
+        <div class="profile-dropdown">
+            <button class="profile-dropdown-btn">
+                <i class="fas fa-user"></i>
+            </button>
+            <div class="profile-dropdown-list">
+                <div class="profile-dropdown-list-item">
+                    <a href="../account/account.html">
+                        <i class="fas fa-user"></i> Manage My Account
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="../cart/cart.html">
+                        <i class="fas fa-box"></i> My Orders
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-times-circle"></i> My Cancellations
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-star"></i> My Reviews
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
 <body>
-    <div class="container">
-        <div class="side-image">
-            <img loading="lazy" src="../image/dl.beatsnoop 1.png" alt="Decorative side image" class="img">
-        </div>
-        <div class="content">
-            <div class="header">
-                <h1 class="create-an-account">Create an account</h1>
-                <p class="enter-your-details-below">Enter your details below</p>
-            </div>
-            <form class="form" onsubmit="event.preventDefault(); registerUser();">
-                <div class="form-group">
-                    <label for="name" class="name">Name</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
-                    <div class="under-line">
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="email-or-phone-number">Email or Phone Number</label>
-                    <input type="text" id="email" name="email" required aria-required="true">
-                    <div class="under-line">
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="password">Password</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="password" name="password" required aria-required="true">
-                        <i class="fas fa-eye" id="toggle-password-signup"
-                            onclick="togglePasswordVisibility('password', 'toggle-password-signup')"></i>
-                    </div>
-                    <div class="under-line">
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <button type="submit" class="button">Create Account</button>
-            </form>
-
-            <div class="additional-options">
-                <button class="google-sign-up">
-                    <i class="fab fa-google" aria-hidden="true"></i>
-                    <span>Sign up with Google</span>
-                </button>
-                <div class="login-option">
-                    <p class="already-have-account">Already have account?</p>
-                    <div class="login-link">
-                        <a href="../login/login.html" class="log-in">Log in</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="breadcrumb">
+        <a href="../homepage/homepage.html">Home</a> /
+        <a href="./contact.html">404 Eror</a> /
     </div>
+
+    <div class="text-not-found">
+        <h1>404 Not Found</h1>
+        <p>Your visited page not found. You may go home page.</p>
+    </div>
+
+    <button class="button-back"><a href="../homepage/homepage.html">Back to home page</a></button>
 
 </body>
 

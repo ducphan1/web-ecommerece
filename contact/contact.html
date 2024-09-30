@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../homepage/homepage.css">
+    <link rel="stylesheet" href="../about/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./cart.css">
-    <link rel="stylesheet" href="../checkout/checkout.css">
-    <link rel="stylesheet" href="../contact/contact.css">
-    <link rel="stylesheet" href="./account.css">
-    <script src="./account.js"></script>
-
+    <link rel="stylesheet" href="./contact.css">
+    <script src="../homepage/homepage.js"></script>
+    <script src="./contact.js"></script>
 </head>
 
-         <div class="top-banner">
+<!-- Top Banner -->
+<div class="top-banner">
     <div class="top-banner2">
     <div class="top-banner-text">
     <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></p>
@@ -22,7 +21,9 @@
     <div class="language">English <i class="fas fa-chevron-down"></i></div>
 </div>
 </div>
-   <header>
+
+<!-- header -->
+<header>
     <div class="navbar">
         <div class="logo">
             <h1><a style="color: black; text-decoration: none;" href="../homepage/homepage.html">Exclusive</a></h1>
@@ -40,12 +41,14 @@
             <button><i class="fas fa-search"></i></button>
         </div>
         <div class="icons">
-            <a href="#"><i class="fas fa-heart"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="../wishlist/wishlist.html"><i class="fas fa-heart"></i></a>
+            <a href="../cart/cart.html"><i class="fas fa-shopping-cart"></i></a>
         </div>
-                   <div class="profile-dropdown">
+        <!-- Dropdown cho Profile -->
+        <div class="profile-dropdown">
             <button class="profile-dropdown-btn">
-                <i class="fas fa-user"></i>                </button>
+                <i class="fas fa-user"></i> <!-- Icon tài khoản -->
+            </button>
             <div class="profile-dropdown-list">
                 <div class="profile-dropdown-list-item">
                     <a href="../account/account.html">
@@ -80,109 +83,49 @@
         </div>
     </div>
 </header>
-
 <body>
     <div class="breadcrumb">
-        <a href="./account.html">Account</a> / 
-        <a href="./account.html">My Account</a> /  
+        <a href="../homepage/homepage.html">Home</a> / 
+        <a href="./contact.html">Contact</a> / 
     </div>
 
-    <div class="welcome"> <p>Welcome!</p> <span> Md Rimel</span></div>
-    
-    
-    <div class="container">
-        <div class="sidebar">
-            <ul>
-              <li><p>Manage My Account</p></li>
-              <li id="profile" class="indented" onclick="openTab('profileTab')">My Profile</li>
-              <li id="addressBook" class="indented" onclick="openTab('addressTab')">Address Book</li>
-              <li id="paymentOptions" class="indented" onclick="openTab('paymentTab')">My Payment Options</li>
-              
-              <li><p>My Orders</p></li>
-              <li id="myReturns" class="indented" onclick="openTab('returnsTab')">My Returns</li>
-              
-              <li><p>My Wishlist</p></li>
-                           <li id="myWishlist" class="indented" onclick="openTab('wishlistTab')">My Wishlist</li>
-            </ul>
-          </div>
-          
-      
-        <div class="content">
-          <div id="profileTab" class="tab-content active">
-            <h2>Edit Your Profile</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call To Us</h3>
+                <p>We are available 24/7, 7 days a week.</p>
+                <p>Phone: +84916926436</p>
+            </div>
+            <hr>
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Write To US</h3>
+                <p>Fill out our form and we will contact you within 24 hours.</p>
+                <p>Emails: customer@exclusive.com</p>
+                <p>Emails: support@exclusive.com</p>
+            </div>
+        </div>
+        
+        <div class="contact-form">
             <form>
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" value="">
-                
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" value="">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" value="">
-                
-                <label for="address">Address:</label>
-                <input type="text" id="address" value="">
-                
-                <h3>Password Changes</h3>
-                <label for="currentPassword">Current Password:</label>
-                <input type="password" id="currentPassword">
-                
-                <label for="newPassword">New Password:</label>
-                <input type="password" id="newPassword">
-                
-                <label for="confirmPassword">Confirm New Password:</label>
-                <input type="password" id="confirmPassword">
-                
-                <button class="button2" type="submit">Save Changes</button>
-                <button class="button1" type="button" onclick="window.location.reload()">Cancel</button>
+                <input type="text" placeholder="Your Name *" required>
+                <input type="email" placeholder="Your Email *" required>
+                <input type="text" placeholder="Your Phone *" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
-            
-          </div>
-      
-                  <div id="addressTab" class="tab-content">
-        <h2>Address Book</h2>
-        <p>Here you can manage your saved addresses.</p>
-        <form>
-          <label for="newAddress">Add New Address:</label>
-          <input type="text" id="newAddress" placeholder="Enter new address">
-          <button class="button2" type="submit">Save Address</button>
-        </form>
-      </div>
-  
-               <div id="paymentTab" class="tab-content">
-        <h2>My Payment Options</h2>
-        <p>Manage your saved payment methods here.</p>
-        <form>
-          <label for="cardNumber">Add Card:</label>
-          <input type="text" id="cardNumber" placeholder="Enter card number">
-          <button class="button2" type="submit">Add Card</button>
-        </form>
-      </div>
-  
-                 <div id="returnsTab" class="tab-content">
-            <h2>My Returns</h2>
-            <p>Track and manage your returns here.</p>
-            <ul>
-            <li>Return request #1: Status - Pending</li>
-            <li>Return request #2: Status - Approved</li>
-            </ul>
         </div>
-      
-                      <div id="wishlistTab" class="tab-content">
-            <h2>My Wishlist</h2>
-            <p>Here are the products you love:</p>
-            <ul>
-            <li>Product 1: Awesome Gadget</li>
-            <li>Product 2: Cool Tech</li>
-            </ul>
-        </div>
-        </div>
-      </div>
-      
+    </div>
+    
 </body>
 
-
-   <footer class="footer">
+<!-- footer -->
+<footer class="footer">
     <div class="footer-content">
         <div class="footer-section">
             <div class="footer-section-logo">
@@ -247,4 +190,5 @@
 <div class="footer-bottom">
     <p>© Copyright Duc 2024. All rights reserved</p>
 </div>
+
 </html>
