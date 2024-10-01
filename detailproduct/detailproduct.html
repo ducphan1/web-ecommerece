@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Detail Product</title>
     <link rel="stylesheet" href="../homepage/homepage.css">
-    <link rel="stylesheet" href="https:     <link rel=" stylesheet" href="login.css">
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="./wishlist.css">
+    <script src="detail.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./detailproduct.css">
 </head>
 
 <div class="top-banner">
@@ -18,7 +20,6 @@
         <div class="language">English <i class="fas fa-chevron-down"></i></div>
     </div>
 </div>
-
 
 <header>
     <div class="navbar">
@@ -45,35 +46,78 @@
 </header>
 
 <body>
-    <div class="login-container">
-        <div class="side-image">
-            <img loading="lazy" src="https:                 alt=" Decorative side image" class="img">
-        </div>
-        <div class="login-form">
-            <div class="form-content">
-                <div class="form-header">
-                    <h1 class="login-title">Log in to Exclusive</h1>
-                    <p class="login-subtitle">Enter your details below</p>
-                </div>
-                <form onsubmit="event.preventDefault(); loginUser();">
-                    <div class="form-group">
-                        <label for="email-phone" class="form-label">Email or Phone Number</label>
-                        <input type="text" id="email-phone" name="email-phone" required class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="form-label">Password</label>
-                        <div class="password-wrapper">
-                            <input type="password" id="password" name="password" required class="form-input">
-                            <i class="fas fa-eye" id="toggle-password-login"
-                                onclick="togglePasswordVisibility('password', 'toggle-password-login')"></i>
-                        </div>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit" class="login-button">Log In</button>
-                        <a href="#" class="forgot-password">Forget Password?</a>
-                    </div>
-                </form>
 
+    <div class="breadcrumb">
+        <a href="../account/account.html">Account/</a>
+        <a href="">Gaming</a>
+    </div>
+    <div class="product-detail">
+
+        <div class="gallery">
+            <div class="thumbnails">
+                <img src="../image/image 57.png" alt="Thumbnail 1">
+                <img src="../image/image 59.png" alt="Thumbnail 2">
+                <img src="../image/image 61.png" alt="Thumbnail 3">
+                <img src="../image/image 58.png" alt="Thumbnail 4">
+            </div>
+            <div class="main-image">
+                <img src="../image/image 63.png" alt="Main Product Image">
+            </div>
+        </div>
+
+
+        <div class="details">
+            <h1>Havic HV G-92 Gamepad</h1>
+            <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span>(150 Reviews)</span>
+            </div>
+            <div class="price">$192.00</div>
+            <div class="text">
+                <p>PlayStation 5 Controller Skin High quality vinyl with air</p>
+                <p>channel adhesive for easy bubble free install & mess </p>
+                <p>free removal Pressure sensitive.</p>
+            </div>
+
+            <div class="color-selection">
+                <span>Colours:</span>
+                <span class="color-option blue"></span>
+                <span class="color-option red"></span>
+            </div>
+
+
+            <div class="size-selection">
+                <span>Size:</span>
+                <button class="size-btn">XS</button>
+                <button class="size-btn">S</button>
+                <button class="size-btn active">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XL</button>
+            </div>
+
+
+            <div class="quantity-selection">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <span id="quantity">2</span>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+            </div>
+
+
+            <button class="buy-btn">Buy Now</button>
+
+
+            <div class="extra-info">
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <span>Free Delivery</span>
+                    <p>Enter your postal code for Delivery Availability</p>
+                </div>
+                <div class="return">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Return Delivery - Free 30 Days</span>
+                    <p>Free 30 Days Delivery Returns. Details</p>
+                </div>
             </div>
         </div>
     </div>
