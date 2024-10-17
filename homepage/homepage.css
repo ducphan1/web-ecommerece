@@ -30,7 +30,7 @@
 
  .top-banner {
      display: flex;
-     width: 1600px;
+     width: auto;
      height: 48px;
      padding: 12px 136px 12px 445px;
      justify-content: flex-start;
@@ -220,7 +220,7 @@
      position: absolute;
      top: 100%;
      width: 220px;
-     background-color: rgba(0, 0, 0, 0.04);
+     background-color: #ddd;
      backdrop-filter: blur(75px);
      border-radius: 4px;
      max-height: 0;
@@ -237,6 +237,7 @@
  }
 
  .profile-dropdown-list.active {
+     background-color: #ddd;
      max-height: 500px;
      height: 250px;
      width: 220px;
@@ -244,7 +245,7 @@
 
  .profile-dropdown-list-item {
      padding: 15px 10px;
-     background-color: rgba(0, 0, 0, 0.04);
+     background-color: #ddd;
      transition: background-color 0.2s ease-in, padding-left 0.2s;
      display: flex;
      align-items: center;
@@ -331,7 +332,7 @@
      background-color: #555;
      color: white;
      cursor: pointer;
-     opacity: 0.5;
+     opacity: 0.3;
      padding: 15px;
      border-radius: 10px;
  }
@@ -376,6 +377,11 @@
      display: flex;
      align-items: center;
      margin-bottom: 20px;
+ }
+
+ .logo h1 {
+     font-size: 30px;
+     color: #000;
  }
 
  .apple-logo {
@@ -533,6 +539,7 @@
 
  .countdown {
      font-size: 32px;
+     margin-right: 800px !important;
      font-weight: 700;
      line-height: 30px;
      letter-spacing: 0.04em;
